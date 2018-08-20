@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+   <include layout = "@layout/activity_top">
+   </include>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+        </FrameLayout>
+
+    </android.support.v4.view.ViewPager>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+        <View
+            android:layout_height="0.7dp"
+            android:layout_width="match_parent"
+            android:background="#22000000"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/barr">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical"
+            android:id="@+id/msg"
+            >
+            <Button
+                android:id="@+id/msg_button"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@mipmap/weixin_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="微信"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:orientation="vertical"
+        android:id="@+id/dianhuabu"
+        android:layout_toRightOf="@id/msg"
+        >
+        <Button
+            android:id="@+id/dianhuabu_button"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:background="@mipmap/contact_list_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="通讯录"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:orientation="vertical"
+            android:id="@+id/search"
+            android:layout_toRightOf="@id/dianhuabu"
+            >
+            <Button
+                android:id="@+id/search_button"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@mipmap/find_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="发现"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:orientation="vertical"
+            android:id="@+id/me"
+            android:layout_toRightOf="@id/search"
+            >
+            <Button
+                android:id="@+id/me_button"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@mipmap/profile_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="我"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

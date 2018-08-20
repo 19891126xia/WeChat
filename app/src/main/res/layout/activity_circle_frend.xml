@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_circle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="315dp"
+        android:background="#f8f8f8" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="center"
+            android:src="@mipmap/beijing6" />
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="12dp"
+            android:background="#fff"
+            android:padding="2dp"
+            android:src="@mipmap/qixia" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
